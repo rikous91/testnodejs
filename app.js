@@ -16,6 +16,10 @@ app.use(app.oauth.errorHandler());
 
 //
 
+app.get('/', async (req, res) => {
+return res.status(200).send('hello');
+});
+
 app.get('/init', async (req, res) => {
 return res.status(200).send('ok');
 });
